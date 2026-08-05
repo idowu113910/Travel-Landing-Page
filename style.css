@@ -7,3 +7,12 @@
 header {
   background-image: url(./Images/SECTION\ ONE\ BG\ IMG.png);
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

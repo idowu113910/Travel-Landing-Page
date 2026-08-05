@@ -7,21 +7,22 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="w-full overflow-x-hidden flex flex-col">
+  <body>
     <!-- =========SECTION ONE====================== -->
     <header
-      class="bg-cover bg-center bg-no-repeat w-full max-w-[1300px] mx-auto min-h-[640px] rounded-2xl pt-[20px] pb-[60px] min-[768px]:min-h-[700px] min-[1024px]:rounded-3xl min-[1280px]:h-[772px] min-[1280px]:min-h-0 min-[1280px]:pb-0 min-[1600px]:max-w-[1560px] min-[1600px]:h-[860px]"
+      class="bg-cover w-[calc(100%-40px)] mx-auto h-[662px] rounded-[16px] pt-[20px] sm:h-[772px] 2xl:max-w-[1560px] mt-[20px]"
     >
       <nav
-        class="flex flex-wrap items-center justify-center gap-[16px] px-[20px] py-[12px] min-[768px]:justify-between min-[1024px]:flex-nowrap min-[1024px]:px-[60px] min-[1024px]:py-[7.5px] min-[1600px]:px-[80px]"
+        class="flex items-center justify-between gap-[16px] px-[20px] py-[12px] lg:px-[60px] lg:py-[7.5px] 2xl:px-[80px]"
       >
         <img
           src="./Images/Fictional company logo.png"
-          class="h-[26px] min-[1024px]:h-[32.1px]"
+          class="h-[26px] lg:h-[32.1px]"
           alt=""
         />
+
         <div
-          class="order-3 flex flex-wrap justify-center gap-[16px] text-[14px] text-[#ffffff] min-[768px]:order-none min-[1024px]:gap-12 min-[1024px]:text-[16px]"
+          class="hidden md:flex justify-center gap-[16px] text-[14px] text-[#ffffff] lg:gap-12 lg:text-[16px]"
         >
           <a href="">Home</a>
           <a href="">Blog</a>
@@ -29,30 +30,36 @@
           <a href="">About Us</a>
           <a href="">Contact</a>
         </div>
-        <div class="flex items-center gap-3">
-          <button
-            class="text-white font-semibold text-[14px] min-[1024px]:text-base"
-          >
+
+        <div class="hidden md:flex items-center gap-3">
+          <button class="text-white font-semibold text-[16px]">
             Login
           </button>
           <button
-            class="border-none rounded-[40px] bg-black text-white font-semibold text-[14px] w-[112px] px-[16px] py-[10px] min-[1024px]:text-base min-[1024px]:w-[140px] min-[1024px]:px-[20px] min-[1024px]:py-[12px]"
+            class="border-none rounded-[40px] bg-black text-white font-semibold text-[16px] w-[103px] h-[45px] px-[20px] py-[12px]"
           >
             Register
           </button>
         </div>
+
+        <!-- Hamburger icon - visible below md, hidden md and up -->
+        <button
+          class="flex flex-col justify-center items-center gap-[5px] w-[28px] h-[28px] md:hidden"
+        >
+          <img src="/Traveling-Landing-Page/nav.svg" alt="" />
+        </button>
       </nav>
 
       <div
-        class="flex flex-col items-center gap-[12px] mt-[56px] px-4 min-[768px]:mt-[90px] min-[1280px]:mt-[120px] min-[1600px]:mt-[150px]"
+        class="flex flex-col items-center gap-[12px] mt-[56px] px-4 md:mt-[90px] xl:mt-[120px] 2xl:mt-[150px]"
       >
         <h1
-          class="text-[#ffffff] text-[32px] text-center leading-[1.15] font-semibold max-w-[608px] min-[640px]:text-[40px] min-[768px]:text-[46px] min-[1024px]:text-[54px] min-[1280px]:text-[60px] min-[1280px]:leading-[1.1] min-[1600px]:text-[68px] min-[1600px]:max-w-[700px]"
+          class="text-[#ffffff] text-[32px] text-center leading-[1.15] font-semibold max-w-[608px] sm:text-[40px] md:text-[46px] lg:text-[54px] xl:text-[60px] xl:leading-[1.1] 2xl:text-[68px] 2xl:max-w-[700px]"
         >
           Discover Norway's Breathtaking Beauty
         </h1>
         <p
-          class="font-normal text-[14px] text-[#FFFFFF] text-center max-w-[480px] min-[768px]:text-base min-[1600px]:text-[18px] min-[1600px]:max-w-[560px]"
+          class="font-normal text-[14px] text-[#FFFFFF] text-center max-w-[480px] md:text-base 2xl:text-[18px] 2xl:max-w-[560px]"
         >
           Embark on a journey through Norway's stunning fjords, vibrant cities,
           and Northern Lights. Your gateway to unforgettable experiences!
@@ -65,159 +72,122 @@
       </div>
 
       <div
-        class="flex flex-wrap justify-center gap-x-[24px] gap-y-[24px] mt-[40px] text-center font-normal text-[#FFFFFF] px-[20px] min-[768px]:gap-x-[48px] min-[1024px]:gap-[80px] min-[1024px]:px-[80px] min-[1280px]:mt-[60px] min-[1600px]:gap-[110px] min-[1600px]:mt-[80px]"
+        class="flex flex-wrap justify-center gap-x-[24px] gap-y-[24px] mt-[40px] text-center font-normal text-[#FFFFFF] px-[20px] md:gap-x-[48px] lg:gap-[80px] lg:px-[80px] xl:mt-[60px] 2xl:gap-[110px] 2xl:mt-[80px]"
       >
         <div
-          class="flex flex-col w-[42%] max-w-[160px] min-[768px]:w-auto min-[768px]:max-w-none"
+          class="flex flex-col w-[42%] max-w-[160px] md:w-auto md:max-w-none"
         >
-          <h2
-            class="text-[22px] font-semibold min-[768px]:text-[28px] min-[1600px]:text-[32px]"
-          >
+          <h2 class="text-[22px] font-semibold md:text-[28px] 2xl:text-[32px]">
             3K+
           </h2>
-          <p
-            class="text-[14px] min-[768px]:text-[18px] min-[1600px]:text-[20px]"
-          >
+          <p class="text-[14px] md:text-[18px] 2xl:text-[20px]">
             Beautiful Destinations
           </p>
         </div>
         <div
-          class="flex flex-col w-[42%] max-w-[160px] min-[768px]:w-auto min-[768px]:max-w-none"
+          class="flex flex-col w-[42%] max-w-[160px] md:w-auto md:max-w-none"
         >
-          <h2
-            class="text-[22px] font-semibold min-[768px]:text-[28px] min-[1600px]:text-[32px]"
-          >
+          <h2 class="text-[22px] font-semibold md:text-[28px] 2xl:text-[32px]">
             8+
           </h2>
-          <p
-            class="text-[14px] min-[768px]:text-[18px] min-[1600px]:text-[20px]"
-          >
+          <p class="text-[14px] md:text-[18px] 2xl:text-[20px]">
             Years of Expertise
           </p>
         </div>
         <div
-          class="flex flex-col w-[42%] max-w-[160px] min-[768px]:w-auto min-[768px]:max-w-none"
+          class="flex flex-col w-[42%] max-w-[160px] md:w-auto md:max-w-none"
         >
-          <h2
-            class="text-[22px] font-semibold min-[768px]:text-[28px] min-[1600px]:text-[32px]"
-          >
+          <h2 class="text-[22px] font-semibold md:text-[28px] 2xl:text-[32px]">
             10K+
           </h2>
-          <p
-            class="text-[14px] min-[768px]:text-[18px] min-[1600px]:text-[20px]"
-          >
+          <p class="text-[14px] md:text-[18px] 2xl:text-[20px]">
             Happy Travelers
           </p>
         </div>
         <div
-          class="flex flex-col w-[42%] max-w-[160px] min-[768px]:w-auto min-[768px]:max-w-none"
+          class="flex flex-col w-[42%] max-w-[160px] md:w-auto md:max-w-none"
         >
-          <h2
-            class="text-[22px] font-semibold min-[768px]:text-[28px] min-[1600px]:text-[32px]"
-          >
+          <h2 class="text-[22px] font-semibold md:text-[28px] 2xl:text-[32px]">
             4.5
           </h2>
-          <p
-            class="text-[14px] min-[768px]:text-[18px] min-[1600px]:text-[20px]"
-          >
-            User Rating
-          </p>
+          <p class="text-[14px] md:text-[18px] 2xl:text-[20px]">User Rating</p>
         </div>
       </div>
     </header>
 
     <!-- =========SECTION TWO======================== -->
     <section
-      class="w-full max-w-[1300px] mx-auto py-[48px] px-[20px] min-[768px]:py-[64px] min-[1024px]:px-[31px] min-[1280px]:py-[80px] min-[1600px]:max-w-[1560px] min-[1600px]:px-[60px] min-[1600px]:py-[100px]"
+      class="w-full max-w-[1338px] mx-auto py-[48px] px-[20px] md:py-[64px] lg:px-[31px] xl:py-[80px] 2xl:max-w-[1560px] 2xl:px-[60px] 2xl:py-[100px]"
     >
       <div
-        class="flex flex-col items-center mb-[32px] min-[1280px]:mb-[40px] min-[1600px]:mb-[56px]"
+        class="flex flex-col items-center mb-[32px] xl:mb-[40px] 2xl:mb-[56px]"
       >
         <h2
-          class="text-[26px] font-medium leading-[1.25] text-center max-w-[550px] mb-[10px] min-[768px]:text-[32px] min-[1280px]:text-[40px] min-[1280px]:leading-[1.2] min-[1600px]:text-[46px] min-[1600px]:max-w-[640px]"
+          class="text-[26px] font-medium leading-[1.25] text-center max-w-[550px] mb-[10px] md:text-[32px] xl:text-[40px] xl:leading-[1.2] 2xl:text-[46px] 2xl:max-w-[640px]"
         >
           Exploring Norway's breathtaking scenery &amp; landscapes
         </h2>
         <p
-          class="text-[15px] font-normal text-center max-w-[460px] leading-6 min-[768px]:text-[18px] min-[1600px]:text-[20px] min-[1600px]:max-w-[520px]"
+          class="text-[15px] font-normal text-center max-w-[460px] leading-6 md:text-[18px] 2xl:text-[20px] 2xl:max-w-[520px]"
         >
           Discover Norway's Wonders Effortlessly – Your shortcut to one-click
           adventures!
         </p>
       </div>
-
       <div
-        class="flex flex-col items-center gap-[24px] mt-[20px] min-[768px]:flex-row min-[768px]:flex-wrap min-[768px]:justify-center min-[1600px]:gap-[32px]"
+        class="[-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden flex flex-row flex-nowrap overflow-x-auto gap-[24px] mt-[20px] pb-[8px] lg:justify-center 2xl:gap-[32px]"
       >
         <div
-          class="relative w-full max-w-[380px] min-[768px]:w-[320px] min-[1024px]:w-[380px] min-[1600px]:w-[480px] min-[1600px]:max-w-[480px]"
+          class="relative w-[280px] shrink-0 md:w-[320px] md:shrink lg:w-[380px] 2xl:w-[480px] 2xl:max-w-[480px]"
         >
           <img
-            class="w-full h-[260px] object-cover rounded-2xl min-[768px]:h-[320px] min-[1024px]:h-[360px] min-[1600px]:h-[440px]"
+            class="w-full h-[260px] object-cover rounded-2xl md:h-[320px] lg:h-[360px] 2xl:h-[440px]"
             src="./Images/SECTION TWO FIRST IMG.jpg"
             alt="Oslo"
           />
           <div
-            class="absolute bottom-[20px] left-[24px] text-white min-[1024px]:left-[30px]"
+            class="absolute bottom-[20px] left-[24px] text-white lg:left-[30px]"
           >
-            <h2
-              class="text-[24px] leading-none min-[1024px]:text-[28px] min-[1600px]:text-[32px]"
-            >
+            <h2 class="text-[24px] leading-none lg:text-[28px] 2xl:text-[32px]">
               Oslo
             </h2>
-            <p
-              class="text-[16px] min-[1024px]:text-[18px] min-[1600px]:text-[20px]"
-            >
-              Norway
-            </p>
+            <p class="text-[16px] lg:text-[18px] 2xl:text-[20px]">Norway</p>
           </div>
         </div>
 
         <div
-          class="relative w-full max-w-[380px] min-[768px]:w-[320px] min-[1024px]:w-[380px] min-[1600px]:w-[480px] min-[1600px]:max-w-[480px]"
+          class="relative w-[280px] shrink-0 md:w-[320px] md:shrink lg:w-[380px] 2xl:w-[480px] 2xl:max-w-[480px]"
         >
           <img
-            class="w-full h-[260px] object-cover rounded-2xl min-[768px]:h-[320px] min-[1024px]:h-[360px] min-[1600px]:h-[440px]"
+            class="w-full h-[260px] object-cover rounded-2xl md:h-[320px] lg:h-[360px] 2xl:h-[440px]"
             src="./Images/SECTION TWO SECOND IMG.jpg"
             alt="Bergen"
           />
           <div
-            class="absolute bottom-[20px] left-[24px] text-white min-[1024px]:left-[30px]"
+            class="absolute bottom-[20px] left-[24px] text-white lg:left-[30px]"
           >
-            <h2
-              class="text-[24px] leading-none min-[1024px]:text-[28px] min-[1600px]:text-[32px]"
-            >
+            <h2 class="text-[24px] leading-none lg:text-[28px] 2xl:text-[32px]">
               Bergen
             </h2>
-            <p
-              class="text-[16px] min-[1024px]:text-[18px] min-[1600px]:text-[20px]"
-            >
-              Norway
-            </p>
+            <p class="text-[16px] lg:text-[18px] 2xl:text-[20px]">Norway</p>
           </div>
         </div>
 
         <div
-          class="relative w-full max-w-[380px] min-[768px]:w-[320px] min-[1024px]:w-[380px] min-[1600px]:w-[480px] min-[1600px]:max-w-[480px]"
+          class="relative w-[280px] shrink-0 md:w-[320px] md:shrink lg:w-[380px] 2xl:w-[480px] 2xl:max-w-[480px]"
         >
           <img
-            class="w-full h-[260px] object-cover rounded-2xl min-[768px]:h-[320px] min-[1024px]:h-[360px] min-[1600px]:h-[440px]"
+            class="w-full h-[260px] object-cover rounded-2xl md:h-[320px] lg:h-[360px] 2xl:h-[440px]"
             src="./Images/SECTION TWO THIRD IMG.jpg"
             alt="Tromsø"
           />
           <div
-            class="absolute bottom-[20px] left-[24px] text-white min-[1024px]:left-[30px]"
+            class="absolute bottom-[20px] left-[24px] text-white lg:left-[30px]"
           >
-            <h2
-              class="text-[24px] leading-none min-[1024px]:text-[28px] min-[1600px]:text-[32px]"
-            >
+            <h2 class="text-[24px] leading-none lg:text-[28px] 2xl:text-[32px]">
               Tromsø
             </h2>
-            <p
-              class="text-[16px] min-[1024px]:text-[18px] min-[1600px]:text-[20px]"
-            >
-              Norway
-            </p>
+            <p class="text-[16px] lg:text-[18px] 2xl:text-[20px]">Norway</p>
           </div>
         </div>
       </div>
@@ -225,78 +195,70 @@
 
     <!-- ========SECTION THREE================ -->
     <section
-      class="w-full max-w-[1300px] mx-auto flex flex-col items-center gap-[40px] py-[48px] px-[20px] min-[768px]:py-[64px] min-[1024px]:flex-row min-[1024px]:items-center min-[1024px]:justify-between min-[1024px]:gap-[60px] min-[1024px]:px-[60px] min-[1280px]:py-[80px] min-[1600px]:max-w-[1560px] min-[1600px]:gap-[100px] min-[1600px]:px-[80px] min-[1600px]:py-[100px]"
+      class="w-full max-w-[1300px] mx-auto flex flex-col items-center gap-[40px] py-[48px] px-[20px] md:py-[64px] lg:flex-row lg:items-center lg:justify-between lg:gap-[60px] lg:px-[60px] xl:py-[80px] 2xl:max-w-[1560px] 2xl:gap-[100px] 2xl:px-[80px] 2xl:py-[100px]"
     >
-      <div
-        class="flex flex-col w-full max-w-[580px] min-[1600px]:max-w-[680px]"
-      >
+      <div class="flex flex-col w-full max-w-[580px] 2xl:max-w-[680px]">
         <h2
-          class="text-[26px] font-medium mb-[16px] min-[768px]:text-[32px] min-[1280px]:text-[40px] min-[1600px]:text-[46px]"
+          class="text-[26px] font-medium mb-[16px] md:text-[32px] xl:text-[40px] 2xl:text-[46px]"
         >
           How Our Platform Works
         </h2>
         <p
-          class="text-[15px] font-normal mb-[32px] min-[768px]:text-[16px] min-[1280px]:mb-[48px] min-[1600px]:text-[18px]"
+          class="text-[15px] font-normal mb-[32px] md:text-[16px] xl:mb-[48px] 2xl:text-[18px]"
         >
           Set your travel goals, optimize your itinerary, and explore Norway
           with ease. Our smart technology helps you plan the perfect adventure,
           from fjord cruises to Northern Lights excursions.
         </p>
 
-        <div class="flex flex-col gap-[24px] min-[1600px]:gap-[32px]">
-          <div class="flex gap-[14px] items-start min-[1024px]:gap-[18px]">
+        <div class="flex flex-col gap-[24px] 2xl:gap-[32px]">
+          <div class="flex gap-[14px] items-start lg:gap-[18px]">
             <img
-              class="w-[48px] h-[48px] rounded-[50px] p-[12px] flex-shrink-0 min-[1024px]:w-[60px] min-[1024px]:h-[60px] min-[1024px]:p-[16px]"
+              class="w-[48px] h-[48px] rounded-[50px] p-[12px] flex-shrink-0 lg:w-[60px] lg:h-[60px] lg:p-[16px]"
               src="./Images/Vector.png"
               alt=""
             />
             <div>
               <h3
-                class="font-medium text-[19px] min-[768px]:text-[22px] min-[1024px]:text-[24px] min-[1600px]:text-[27px]"
+                class="font-medium text-[19px] md:text-[22px] lg:text-[24px] 2xl:text-[27px]"
               >
                 Choose Your Destination
               </h3>
-              <p
-                class="font-normal text-[15px] min-[768px]:text-[16px] min-[1600px]:text-[18px]"
-              >
+              <p class="font-normal text-[15px] md:text-[16px] 2xl:text-[18px]">
                 Select from thousands of beautiful places
               </p>
             </div>
           </div>
-          <div class="flex gap-[14px] items-start min-[1024px]:gap-[18px]">
+          <div class="flex gap-[14px] items-start lg:gap-[18px]">
             <img
-              class="w-[48px] h-[48px] rounded-[50px] p-[12px] flex-shrink-0 min-[1024px]:w-[60px] min-[1024px]:h-[60px] min-[1024px]:p-[16px]"
+              class="w-[48px] h-[48px] rounded-[50px] p-[12px] flex-shrink-0 lg:w-[60px] lg:h-[60px] lg:p-[16px]"
               src="./Images/Vector (1).png"
               alt=""
             />
             <div>
               <h3
-                class="font-medium text-[19px] min-[768px]:text-[22px] min-[1024px]:text-[24px] min-[1600px]:text-[27px]"
+                class="font-medium text-[19px] md:text-[22px] lg:text-[24px] 2xl:text-[27px]"
               >
                 Personalize Your Trip
               </h3>
-              <p
-                class="font-normal text-[15px] min-[768px]:text-[16px] min-[1600px]:text-[18px]"
-              >
+              <p class="font-normal text-[15px] md:text-[16px] 2xl:text-[18px]">
                 Get custom itineraries tailored to your preferences
               </p>
             </div>
           </div>
-          <div class="flex gap-[14px] items-start min-[1024px]:gap-[18px]">
+          <div class="flex gap-[14px] items-start lg:gap-[18px]">
             <img
-              class="w-[48px] h-[48px] rounded-[50px] p-[12px] flex-shrink-0 min-[1024px]:w-[60px] min-[1024px]:h-[60px] min-[1024px]:p-[16px]"
+              class="w-[48px] h-[48px] rounded-[50px] p-[12px] flex-shrink-0 lg:w-[60px] lg:h-[60px] lg:p-[16px]"
               src="./Images/Vector (2).png"
               alt=""
             />
             <div>
               <h3
-                class="font-medium text-[19px] min-[768px]:text-[22px] min-[1024px]:text-[24px] min-[1600px]:text-[27px]"
+                class="font-medium text-[19px] md:text-[22px] lg:text-[24px] 2xl:text-[27px]"
               >
                 Travel Effortlessly
               </h3>
-              <p
-                class="font-normal text-[15px] min-[768px]:text-[16px] min-[1600px]:text-[18px]"
-              >
+              <p class="font-normal text-[15px] md:text-[16px] 2xl:text-[18px]">
                 Book and explore Norway without hassle
               </p>
             </div>
@@ -304,17 +266,15 @@
         </div>
 
         <button
-          class="border-none rounded-[40px] bg-black text-[#FFFFFF] text-[16px] font-semibold w-[156px] h-[45px] mt-[32px] px-[20px] py-[12px] min-[1280px]:mt-[48px]"
+          class="border-none rounded-[40px] bg-black text-[#FFFFFF] text-[16px] font-semibold w-[156px] h-[45px] mt-[32px] px-[20px] py-[12px] xl:mt-[48px]"
         >
           Book your spot
         </button>
       </div>
 
-      <div
-        class="w-full max-w-[466px] min-[1024px]:flex-shrink-0 min-[1600px]:max-w-[600px]"
-      >
+      <div class="w-full max-w-[466px] lg:flex-shrink-0 2xl:max-w-[600px]">
         <img
-          class="w-full h-[280px] rounded-[16px] object-cover min-[768px]:h-[380px] min-[1024px]:h-[440px] min-[1600px]:h-[540px]"
+          class="w-full h-[280px] rounded-[16px] object-cover md:h-[380px] lg:h-[440px] 2xl:h-[540px]"
           src="./Images/SECTION THREE IMG.png"
           alt=""
         />
@@ -323,16 +283,16 @@
 
     <!-- ============SECTION FOUR================ -->
     <section
-      class="w-full max-w-[1300px] mx-auto flex flex-col gap-[32px] px-[20px] py-[48px] min-[768px]:py-[64px] min-[1024px]:px-[60px] min-[1024px]:gap-[40px] min-[1280px]:py-[80px] min-[1600px]:max-w-[1560px] min-[1600px]:px-[80px] min-[1600px]:py-[100px] min-[1600px]:gap-[56px]"
+      class="w-full max-w-[1338px] mx-auto flex flex-col gap-[32px] px-[20px] py-[48px] md:py-[64px] lg:px-[60px] lg:gap-[40px] xl:py-[80px] 2xl:max-w-[1560px] 2xl:px-[80px] 2xl:py-[100px] 2xl:gap-[56px]"
     >
       <div class="flex flex-col items-center text-center gap-[16px]">
         <h2
-          class="text-[26px] font-medium max-w-[720px] min-[768px]:text-[32px] min-[1280px]:text-[42px] min-[1600px]:text-[48px] min-[1600px]:max-w-[840px]"
+          class="text-[26px] font-medium max-w-[720px] md:text-[32px] xl:text-[42px] 2xl:text-[48px] 2xl:max-w-[840px]"
         >
           Flexible Travel Plans for Every Explorer
         </h2>
         <p
-          class="text-[15px] font-normal max-w-[720px] min-[768px]:text-[16px] min-[1600px]:text-[18px] min-[1600px]:max-w-[820px]"
+          class="text-[15px] font-normal max-w-[720px] md:text-[16px] 2xl:text-[18px] 2xl:max-w-[820px]"
         >
           Set your travel goals, optimize your itinerary, and explore Norway
           with ease. Our smart technology helps you plan the perfect adventure,
@@ -341,23 +301,23 @@
       </div>
 
       <div
-        class="flex flex-col items-center gap-[20px] min-[768px]:flex-row min-[768px]:flex-wrap min-[768px]:justify-center min-[1600px]:gap-[28px]"
+        class="[-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden flex flex-row flex-nowrap overflow-x-auto scroll-smooth snap-x snap-mandatory gap-[20px] pb-[8px] lg:grid lg:grid-cols-2 lg:overflow-visible 2xl:gap-[28px]"
       >
         <div
-          class="flex flex-col w-full max-w-[380px] min-[768px]:w-[330px] min-[1024px]:w-[380px] min-[1600px]:w-[470px] min-[1600px]:max-w-[470px]"
+          class="flex flex-col w-[380px] shrink-0 md:w-[320px] lg:w-auto lg:shrink 2xl:w-[470px] 2xl:max-w-[470px]"
         >
           <img
             src="./Images/SECTION FOUR IMG1.jpg"
-            class="w-full h-[320px] object-cover p-[8px] rounded-[16px] min-[1024px]:h-[380px] min-[1600px]:h-[460px]"
+            class="w-full h-[320px] object-cover p-[8px] rounded-[16px] lg:h-[380px] 2xl:h-[460px]"
             alt=""
           />
           <div
-            class="bg-white mx-[8px] mt-[-100px] relative z-10 rounded-[16px] p-[16px] min-[1024px]:mt-[-120px] min-[1600px]:p-[20px]"
+            class="bg-white mx-auto w-full max-w-[350px] mb-[8px] mt-[-135px] relative z-10 rounded-[16px] p-[16px] lg:mt-[-150px] 2xl:max-w-[390px] 2xl:p-[20px]"
           >
-            <h5 class="font-normal text-lg text-black min-[1600px]:text-[20px]">
+            <h5 class="font-normal text-lg text-black 2xl:text-[20px]">
               Fjordview Cabin Retreat
             </h5>
-            <p class="font-medium text-sm mb-[10px] min-[1600px]:text-[15px]">
+            <p class="font-medium text-sm mb-[10px] 2xl:text-[15px]">
               Geiranger, Norway
             </p>
             <div class="flex items-center justify-between">
@@ -374,20 +334,20 @@
         </div>
 
         <div
-          class="flex flex-col w-full max-w-[380px] min-[768px]:w-[330px] min-[1024px]:w-[380px] min-[1600px]:w-[470px] min-[1600px]:max-w-[470px]"
+          class="flex flex-col w-[380px] shrink-0 md:w-[320px] lg:w-auto lg:shrink 2xl:w-[470px] 2xl:max-w-[470px]"
         >
           <img
             src="./Images/SECTION FOUR IMG2.jpg"
-            class="w-full h-[320px] object-cover p-[8px] rounded-[16px] min-[1024px]:h-[380px] min-[1600px]:h-[460px]"
+            class="w-full h-[320px] object-cover p-[8px] rounded-[16px] lg:h-[380px] 2xl:h-[460px]"
             alt=""
           />
           <div
-            class="bg-white mx-[8px] mt-[-100px] relative z-10 rounded-[16px] p-[16px] min-[1024px]:mt-[-120px] min-[1600px]:p-[20px]"
+            class="bg-white mx-auto w-full max-w-[350px] mb-[8px] mt-[-135px] relative z-10 rounded-[16px] p-[16px] lg:mt-[-150px] 2xl:max-w-[390px] 2xl:p-[20px]"
           >
-            <h5 class="font-normal text-lg text-black min-[1600px]:text-[20px]">
+            <h5 class="font-normal text-lg text-black 2xl:text-[20px]">
               Northern Lights Lodge
             </h5>
-            <p class="font-medium text-sm mb-[10px] min-[1600px]:text-[15px]">
+            <p class="font-medium text-sm mb-[10px] 2xl:text-[15px]">
               Tromsø, Norway
             </p>
             <div class="flex items-center justify-between">
@@ -404,20 +364,20 @@
         </div>
 
         <div
-          class="flex flex-col w-full max-w-[380px] min-[768px]:w-[330px] min-[1024px]:w-[380px] min-[1600px]:w-[470px] min-[1600px]:max-w-[470px]"
+          class="flex flex-col w-[380px] shrink-0 md:w-[320px] lg:w-auto lg:shrink lg:col-span-2 lg:mx-auto lg:max-w-[380px] 2xl:w-[470px] 2xl:max-w-[470px]"
         >
           <img
             src="./Images/SECTION FOUR IMG3.jpg"
-            class="w-full h-[320px] object-cover p-[8px] rounded-[16px] min-[1024px]:h-[380px] min-[1600px]:h-[460px]"
+            class="w-full h-[320px] object-cover p-[8px] rounded-[16px] lg:h-[380px] 2xl:h-[460px]"
             alt=""
           />
           <div
-            class="bg-white mx-[8px] mt-[-100px] relative z-10 rounded-[16px] p-[16px] min-[1024px]:mt-[-120px] min-[1600px]:p-[20px]"
+            class="bg-white mx-auto w-full max-w-[350px] mb-[8px] mt-[-135px] relative z-10 rounded-[16px] p-[16px] lg:mt-[-150px] 2xl:max-w-[390px] 2xl:p-[20px]"
           >
-            <h5 class="font-normal text-lg text-black min-[1600px]:text-[20px]">
+            <h5 class="font-normal text-lg text-black 2xl:text-[20px]">
               Oslo Forest Hideaway
             </h5>
-            <p class="font-medium text-sm mb-[10px] min-[1600px]:text-[15px]">
+            <p class="font-medium text-sm mb-[10px] 2xl:text-[15px]">
               Oslo, Norway
             </p>
             <div class="flex items-center justify-between">
@@ -443,22 +403,21 @@
 
     <!-- =============SECTION FIVE=============== -->
     <section
-      class="w-full max-w-[1300px] mx-auto px-[20px] py-[48px] min-[768px]:py-[64px] min-[1024px]:px-[60px] min-[1280px]:py-[80px] min-[1600px]:max-w-[1560px] min-[1600px]:px-[80px] min-[1600px]:py-[100px]"
+      class="w-full max-w-[1533px] mx-auto px-[20px] py-[48px] md:py-[64px] lg:px-[60px] xl:py-[80px] 2xl:max-w-[1560px] 2xl:px-[80px] 2xl:py-[100px]"
     >
       <h2
-        class="text-[26px] font-medium text-center max-w-[700px] mx-auto mb-[32px] min-[768px]:text-[30px] min-[1280px]:text-[38px] min-[1280px]:mb-[50px] min-[1600px]:text-[44px] min-[1600px]:max-w-[820px] min-[1600px]:mb-[64px]"
+        class="text-[26px] font-medium text-center max-w-[700px] mx-auto mb-[32px] md:text-[30px] xl:text-[38px] xl:mb-[50px] 2xl:text-[44px] 2xl:max-w-[820px] 2xl:mb-[64px]"
       >
         Hear What Travelers Say About Their Nordic Adventure!
       </h2>
-
       <div
-        class="flex flex-col items-center gap-[18px] min-[768px]:flex-row min-[768px]:flex-wrap min-[768px]:justify-center min-[1600px]:gap-[28px]"
+        class="[-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden flex flex-row flex-nowrap overflow-x-auto scroll-smooth snap-x snap-mandatory gap-[18px] mt-[20px] pb-[8px] lg:justify-center 2xl:gap-[28px]"
       >
         <div
-          class="w-full max-w-[380px] rounded-[16px] p-[24px] flex flex-col border border-[#E5E5E5] min-[768px]:w-[340px] min-[1024px]:w-[380px] min-[1024px]:p-[32px] min-[1600px]:w-[468px] min-[1600px]:max-w-[468px] min-[1600px]:p-[40px]"
+          class="w-[320px] shrink-0 rounded-[16px] p-[24px] flex flex-col border border-[#E5E5E5] md:w-[340px] md:shrink lg:w-[380px] lg:p-[32px] 2xl:w-[468px] 2xl:max-w-[468px] 2xl:p-[40px]"
         >
           <h2
-            class="text-[19px] font-normal mb-[20px] min-[768px]:text-[22px] min-[1024px]:text-[26px] min-[1024px]:mb-[30px] min-[1600px]:text-[29px]"
+            class="text-[19px] font-normal mb-[20px] md:text-[22px] lg:text-[26px] lg:mb-[30px] 2xl:text-[29px]"
           >
             "I didn't just visit Norway—I experienced its soul. A magical
             journey through fjords and mountains."
@@ -468,19 +427,17 @@
             src="./Images/SECTION FIVE IMG1.png"
             alt=""
           />
-          <h4 class="font-semibold text-[18px] min-[1024px]:text-[20px]">
-            Jordan Blake
-          </h4>
-          <p class="font-normal text-[15px] min-[1024px]:text-[16px]">
+          <h4 class="font-semibold text-[18px] lg:text-[20px]">Jordan Blake</h4>
+          <p class="font-normal text-[15px] lg:text-[16px]">
             Co-Founder, SnapWave
           </p>
         </div>
 
         <div
-          class="w-full max-w-[380px] rounded-[16px] p-[24px] flex flex-col border border-[#E5E5E5] min-[768px]:w-[340px] min-[1024px]:w-[380px] min-[1024px]:p-[32px] min-[1600px]:w-[468px] min-[1600px]:max-w-[468px] min-[1600px]:p-[40px]"
+          class="w-[320px] shrink-0 rounded-[16px] p-[24px] flex flex-col border border-[#E5E5E5] md:w-[340px] md:shrink lg:w-[380px] lg:p-[32px] 2xl:w-[468px] 2xl:max-w-[468px] 2xl:p-[40px]"
         >
           <h2
-            class="text-[19px] font-normal mb-[20px] min-[768px]:text-[22px] min-[1024px]:text-[26px] min-[1024px]:mb-[30px] min-[1600px]:text-[29px]"
+            class="text-[19px] font-normal mb-[20px] md:text-[22px] lg:text-[26px] lg:mb-[30px] 2xl:text-[29px]"
           >
             "With this platform, I discovered hidden gems, from Arctic
             landscapes to cozy Scandinavian villages."
@@ -490,19 +447,19 @@
             src="./Images/SECTION FIVE IMG2.png"
             alt=""
           />
-          <h4 class="font-semibold text-[18px] min-[1024px]:text-[20px]">
+          <h4 class="font-semibold text-[18px] lg:text-[20px]">
             Taylor Morgan
           </h4>
-          <p class="font-normal text-[15px] min-[1024px]:text-[16px]">
+          <p class="font-normal text-[15px] lg:text-[16px]">
             Co-Founder, ClipNest
           </p>
         </div>
 
         <div
-          class="w-full max-w-[380px] rounded-[16px] p-[24px] flex flex-col border border-[#E5E5E5] min-[768px]:w-[340px] min-[1024px]:w-[380px] min-[1024px]:p-[32px] min-[1600px]:w-[468px] min-[1600px]:max-w-[468px] min-[1600px]:p-[40px]"
+          class="w-[320px] shrink-0 rounded-[16px] p-[24px] flex flex-col border border-[#E5E5E5] md:w-[340px] md:shrink lg:w-[380px] lg:p-[32px] 2xl:w-[468px] 2xl:max-w-[468px] 2xl:p-[40px]"
         >
           <h2
-            class="text-[19px] font-normal mb-[20px] min-[768px]:text-[22px] min-[1024px]:text-[26px] min-[1024px]:mb-[30px] min-[1600px]:text-[29px]"
+            class="text-[19px] font-normal mb-[20px] md:text-[22px] lg:text-[26px] lg:mb-[30px] 2xl:text-[29px]"
           >
             "Exploring the vibrant culture of Norway opened my eyes to new
             traditions and culinary delights."
@@ -512,10 +469,8 @@
             src="./Images/SECTION FIVE IMG3.png"
             alt=""
           />
-          <h4 class="font-semibold text-[18px] min-[1024px]:text-[20px]">
-            Avery Chen
-          </h4>
-          <p class="font-normal text-[15px] min-[1024px]:text-[16px]">
+          <h4 class="font-semibold text-[18px] lg:text-[20px]">Avery Chen</h4>
+          <p class="font-normal text-[15px] lg:text-[16px]">
             Co-Founder, TrendSphere
           </p>
         </div>
@@ -524,22 +479,16 @@
 
     <!-- ===============SECTION SIX======================= -->
     <section
-      class="w-full max-w-[1300px] mx-auto px-[20px] mb-[48px] min-[1024px]:px-[60px] min-[1280px]:mb-[80px] min-[1600px]:max-w-[1560px] min-[1600px]:px-[80px] min-[1600px]:mb-[100px]"
+      class="w-full max-w-[1300px] mx-auto px-[20px] mb-[48px] lg:px-[60px] xl:mb-[80px] 2xl:max-w-[1560px] 2xl:px-[80px] 2xl:mb-[100px]"
     >
       <div
-        class="bg-[#F5F5F5] rounded-[16px] flex flex-col items-start gap-[24px] p-[28px] min-[768px]:p-[40px] min-[1024px]:flex-row min-[1024px]:items-center min-[1024px]:justify-between min-[1024px]:gap-[32px] min-[1024px]:p-[64px] min-[1600px]:p-[80px]"
+        class="bg-[#F5F5F5] rounded-[16px] flex flex-col items-start gap-[24px] p-[28px] md:p-[40px] lg:flex-row lg:items-center lg:justify-between lg:gap-[32px] lg:p-[64px] 2xl:p-[80px]"
       >
-        <div
-          class="flex flex-col gap-[16px] max-w-[548px] min-[1600px]:max-w-[680px]"
-        >
-          <h2
-            class="font-normal text-[22px] min-[768px]:text-[28px] min-[1600px]:text-[34px]"
-          >
+        <div class="flex flex-col gap-[16px] max-w-[548px] 2xl:max-w-[680px]">
+          <h2 class="font-normal text-[22px] md:text-[28px] 2xl:text-[34px]">
             Ready to Explore Norway?
           </h2>
-          <p
-            class="font-normal text-[15px] min-[768px]:text-[18px] min-[1600px]:text-[20px]"
-          >
+          <p class="font-normal text-[15px] md:text-[18px] 2xl:text-[20px]">
             Start your journey today with expert planning, seamless booking, and
             unforgettable experiences.
           </p>
@@ -561,13 +510,13 @@
 
     <!-- ==============FOOTER==================== -->
     <footer
-      class="w-full max-w-[1300px] mx-auto bg-[#000000] rounded-[16px] px-[24px] pt-[36px] pb-[24px] text-[#ffffff] mb-[20px] min-[1024px]:px-[60px] min-[1024px]:pt-[48px] min-[1600px]:max-w-[1560px] min-[1600px]:px-[80px] min-[1600px]:pt-[64px]"
+      class="w-[calc(100%-40px)] max-w-[1300px] mx-auto bg-[#000000] rounded-[16px] px-[24px] pt-[36px] pb-[24px] text-[#ffffff] mb-[20px] lg:px-[60px] lg:pt-[48px] 2xl:max-w-[1560px] 2xl:px-[80px] 2xl:pt-[64px]"
     >
       <div
-        class="flex flex-col gap-[32px] mb-[32px] min-[1024px]:flex-row min-[1024px]:justify-between min-[1024px]:items-start min-[1024px]:mb-[40px] min-[1600px]:mb-[56px]"
+        class="flex flex-col gap-[32px] mb-[32px] lg:flex-row lg:justify-between lg:items-start lg:mb-[40px] 2xl:mb-[56px]"
       >
         <div
-          class="flex flex-col gap-[24px] max-w-[500px] min-[1024px]:gap-[32px] min-[1600px]:max-w-[560px]"
+          class="flex flex-col gap-[24px] max-w-[500px] lg:gap-[32px] 2xl:max-w-[560px]"
         >
           <div>
             <img
@@ -575,15 +524,13 @@
               src="./Images/Fictional company logo FOOTER.png"
               alt=""
             />
-            <p
-              class="text-[15px] min-[1024px]:text-[16px] min-[1600px]:text-[18px]"
-            >
+            <p class="text-[15px] lg:text-[16px] 2xl:text-[18px]">
               We help travelers explore Norway's wonders effortlessly with smart
               planning and expert guides.
             </p>
           </div>
           <div
-            class="flex flex-wrap gap-[20px] text-[15px] min-[1024px]:gap-[32px] min-[1024px]:text-[16px] min-[1600px]:text-[18px]"
+            class="flex flex-wrap gap-[20px] text-[15px] lg:gap-[32px] lg:text-[16px] 2xl:text-[18px]"
           >
             <p>Home</p>
             <p>Blog</p>
@@ -592,22 +539,20 @@
             <p>Contact</p>
           </div>
         </div>
-        <div class="w-full min-[1024px]:w-auto">
+        <div class="w-full lg:w-auto">
           <h4
-            class="font-semibold text-[18px] mb-[16px] min-[1024px]:text-[20px] min-[1600px]:text-[22px]"
+            class="font-semibold text-[18px] mb-[16px] lg:text-[20px] 2xl:text-[22px]"
           >
             Stay up to date
           </h4>
-          <div
-            class="flex flex-col gap-[12px] min-[640px]:flex-row min-[640px]:gap-[16px]"
-          >
+          <div class="flex flex-col gap-[12px] sm:flex-row sm:gap-[16px]">
             <input
-              class="border border-[#ffffff] bg-transparent w-full max-w-[280px] placeholder-white py-[10px] px-[20px] h-[45px] rounded-[50px] min-[640px]:w-[280px] min-[1600px]:w-[340px] min-[1600px]:max-w-[340px]"
+              class="border border-[#ffffff] bg-transparent w-full max-w-[280px] placeholder-white py-[10px] px-[20px] h-[45px] rounded-[50px] sm:w-[280px] 2xl:w-[340px] 2xl:max-w-[340px]"
               type="email"
               placeholder="Enter your email"
             />
             <button
-              class="border border-white rounded-[40px] py-[12px] px-[20px] w-[140px] min-[640px]:w-auto"
+              class="border border-white rounded-[40px] py-[12px] px-[20px] w-[140px] sm:w-auto"
             >
               Subscribe
             </button>
@@ -616,7 +561,7 @@
       </div>
       <hr class="border-[#333333]" />
       <div
-        class="flex flex-col gap-[16px] mt-[24px] text-[14px] min-[768px]:flex-row min-[768px]:justify-between min-[1024px]:mt-[32px] min-[1024px]:text-[16px]"
+        class="flex flex-col gap-[16px] mt-[24px] text-[14px] md:flex-row md:justify-between lg:mt-[32px] lg:text-[16px]"
       >
         <p>© 2025 TinyUI. All rights reserved.</p>
         <div class="flex gap-[16px]">
