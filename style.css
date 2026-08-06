@@ -4,9 +4,7 @@
   font-family: "DM Sans", sans-serif;
 }
 
-header {
-  background-image: url(./Images/SECTION\ ONE\ BG\ IMG.png);
-}
+
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
