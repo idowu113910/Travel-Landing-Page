@@ -4,7 +4,18 @@
   font-family: "DM Sans", sans-serif;
 }
 
+header {
+  background-image: url(./Images/bakcground\ image\ mobile.jpg);
+  background-size: cover;
+  background-position: top;
+}
 
+@media (min-width: 640px) {
+  header {
+    background-image: url(./Images/SECTION\ ONE\ BG\ IMG.png);
+    background-position: center;
+  }
+}
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
